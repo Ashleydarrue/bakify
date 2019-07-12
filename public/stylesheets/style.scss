@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+
 body {
   margin: 0 auto;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 nav{
-  height: 45px;
+  height: 75px;
   display: flex;
   justify-content: space-between;
-  font-size: 15px;
+  font-size: 16px;
   
 }
 
@@ -34,12 +36,12 @@ nav img{
   background-size: cover;
   height: 700px;
   background-repeat: no-repeat;
-  width: 100%;
+
 }
 
    /* Full-width input fields */
 input[type=text], input[type=password] {
-  width: 100%;
+  width: 93%;
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
@@ -48,7 +50,7 @@ input[type=text], input[type=password] {
 }
 
 /* Add a background color when the inputs get focus */
-input[type=text]:focus, input[type=password]:focus {
+input[type=text]:focus, input[type=password], input[type=date]:focus {
   background-color: #ddd;
   outline: none;
 }
@@ -96,7 +98,7 @@ button:hover {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: #474e5d;
+  background-color: rgba(119, 182, 190, 0.7);
   padding-top: 50px;
 }
 
@@ -105,7 +107,7 @@ button:hover {
   background-color: #fefefe;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 50%; /* Could be more or less, depending on screen size */
 }
 
 /* Style the horizontal ruler */
@@ -142,4 +144,21 @@ hr {
   .cancelbtn, .signupbtn {
      width: 100%;
   }
+}
+
+
+.textheader{
+  padding-top: 200px;
+}
+
+
+.textheader h1 {
+  background-color: rgba(119, 182, 190, 0.7);
+  border-radius: 15px 0px;
+  display: flex;
+  justify-content: center;
+  margin: 0px 420px;
+  padding: 60px;
+  font-family: 'Dancing Script', cursive;
+  color: black;
 }
