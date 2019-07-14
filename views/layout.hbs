@@ -14,11 +14,39 @@
         <a href="/">Home</a> 
         <a href="#">How it works</a>
         <a href="#">About</a>
-        <a href="#">Sign In</a>
+        <button class="loginbttn" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign in</button>
         <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Get Started</button>
         </div>
   </nav>
+   {{!-- Log In Button Modal --}}
+<div id="id02" class="modal2">
+  <form class="modal-content2 animate2" action="/auth/login" method='POST'>
+    <div class="imgcontainer2">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close2" title="Close Modal">&times;</span>
+      <img src="/images/bakify.png" alt="logo" class="logo">
+    </div>
+    <div class="container2">
+      <label for="username"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="username" required>
+      <label for="password"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="password" required>
+      <button class="loginbttn"type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+    <div class="container2" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn2">Cancel</button> 
+    </div>
+  </form>
+</div>
 
+
+
+
+
+
+  {{!-- Sign Up Button Modal --}}
   <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
   <form class="modal-content" action="/auth/signup" method='POST'>
@@ -37,10 +65,7 @@
       
       <label for="date"><b>Event Date:</b></label>
       <input type="date" name="eventDate" required>
-      
-
       <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-
       <div class="clearfix">
         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
         <button type="submit" class="signupbtn">Sign Up</button>
@@ -51,5 +76,9 @@
   {{{body}}}
 
   <script src="/javascripts/script.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
 </body>
 </html>
