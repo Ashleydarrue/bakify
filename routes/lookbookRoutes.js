@@ -5,12 +5,12 @@ const express = require('express');
  const uploadMagic = require('../config/cloundinary-setup');
  const passport = require('passport');
 const ensureLogin = require("connect-ensure-login");
-
+const Gallery = require("../models/Gallery");
  
  router.get('/lookbook', ensureLogin.ensureLoggedIn(),(req, res, next)=>{
   User.findById(req.user._id).populate('lookbook')
   .then(user => {
-    res.render('userViews/lookbook', {image: user.lookbook.images, layout:false})
+    res.render('userViews/lookbook', {image: user.lookbook.images, layout:false, theid: user.lookbook._id})
   })
   .catch(err => {
     console.log(err)
@@ -24,25 +24,6 @@ router.post('/addimage', uploadMagic.single('thePic') ,(req, res, next)=>{
   const imgName = req.file.originalname;
   const {comment} = req.body;
 
-  // Lookbook.find({
-  //   image: imgPath,
-  //   comment
-  // })
-
-  // .then((lookbook) => {
-  //   console.log(lookbook)
-  // })
-  // .catch(err => {
-  //   console.log(err)
-  // })
-
-  // User.findByIdAndUpdate(req.user._id, { $push: {imgPath, comment} })
-  //   .then((userDB) => {
-  //     res.redirect('/look/lookbook')
-  //   })
-  //   .catch(err => {
-  //     console.log(err)
-  //   })
   Lookbook.findByIdAndUpdate(
     req.user.lookbook,
     {$push: {images: {imgPath: imgPath, comment: comment}}},)
@@ -55,10 +36,42 @@ router.post('/addimage', uploadMagic.single('thePic') ,(req, res, next)=>{
     });
   
 })
-  
-  
+
+router.post('/lookbook/delete/:idOfImgPath/:indextodelete', (req, res, next)=>{
+
+  console.log(req.params.idOfImgPath, req.params.indextodelete )
+
+  Lookbook.findById(req.params.idOfImgPath)
+  .then((lookbook)=>{
+
+    lookbook.images.splice(req.params.indextodelete, 1)
+     console.log(lookbook);
+
+    lookbook.save().then(()=>{
+        res.redirect('/look/lookbook')
+    })
+  })
+  .catch((err)=>{
+      next(err);
+  })
+
+})
 
 
+
+
+
+
+
+
+
+
+router.get("/gallery", (req,res,next)=>{
+    Gallery.find()
+      .then(galleries => {
+        res.render('userViews/gallery', {galleries, layout:false});
+      })
+  })
 
   router.get('/logout', (req, res, next)=>{
     req.logout();

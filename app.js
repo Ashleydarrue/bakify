@@ -15,11 +15,21 @@ const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
 const flash = require("connect-flash");
 mongoose.set('useFindAndModify', false);
+// const data = require('./bin/seeds')
+// const Gallery = require('./models/Gallery')
 
 mongoose
   .connect('mongodb://localhost/bakify', {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
+
+    // Gallery.insertMany(data)
+    //   .then(() => {
+    //     console.log('Saved')
+    //   })
+    //   .catch(err => {
+    //     console.log(err)
+    //   });
   })
   .catch(err => {
     console.error('Error connecting to mongo', err)

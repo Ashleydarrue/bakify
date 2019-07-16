@@ -4,11 +4,11 @@
     <div class="sidebar-content">
       <div class="navicon"><a class="menu-icon" href="#"><i class="fas fa-book-open"></i></a></div>
          <div class="title">
-          <h4> Your LookBook</h4>
+          <h6> Your LookBook</h6>
          </div>
       <ul class="sidebar-menu list-unstyled">
-        <li class="list-item"><a href="#"><i class="fa fa-home"></i><span>Home</span></a></li>
-        <li class="list-item"><a href="/look/lookbook"><i class="far fa-images"></i><span>Gallery</span></a></li>
+        <li class="list-item"><a href="/auth/profile"><i class="fa fa-home"></i><span>Home</span></a></li>
+        <li class="list-item"><a href="/look/gallery"><i class="far fa-images"></i><span>Gallery</span></a></li>
         <li class="list-item"><a href="#"><i class="fas fa-tasks"></i><span>Check-List</span></a></li>
         <li class="list-item"><a href="/auth/logout"><i class="fas fa-sign-out-alt"></i><span>Log Out</span></a></li>
       </ul>
@@ -20,9 +20,9 @@
 
   </div>
  
- <section class="lookbookContent">
+ {{!-- <section class="lookbookContent">
    <p> Add Images to your LookBook</p>
- </section>
+ </section> --}}
      
      <section class="addimg">
         <form action="/look/addimage" method="POST" enctype="multipart/form-data">
@@ -36,8 +36,8 @@
      </section>
 
      <section class="lookbookCard">
-              {{#each image}}
                   <div class="row">
+              {{#each image}}
                   <div class="col s12 m6">
                     <div class="card">
                       <div class="card-image">
@@ -48,13 +48,15 @@
                         <p>{{this.comment}}.</p>
                       </div>
                       <div class="card-action">
+                        <form action="/look/lookbook/delete/{{../theid}}/{{@index}}" method="POST">
                         <button class="dlt">DELETE</button>
+                        </form>
                         <button class="edt">Edit Comment</button>
                       </div>
                     </div>
                   </div>
-                </div>
              {{/each}}
+                </div>
      </section>
     
 

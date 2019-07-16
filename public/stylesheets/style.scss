@@ -289,7 +289,7 @@ img.logo {
   .spinnerIcon{
     display: flex;
     justify-content: center;
-    border-top: 1px solid #888;
+   
     padding: 10px 0;
     color: palevioletred;
   }
@@ -297,7 +297,6 @@ img.logo {
     display: flex;
     flex-direction: column;
     text-align: center;
-    border-bottom: 1px solid #888;
     padding: 0 0;
   }
   .navicon {
@@ -400,18 +399,27 @@ body.sidebar-mini .sidebar {
   width: 25%;
 }
 
-.upload{
-  width: 70px;
-  height: 10px;
+.upload {
+  width: 95px;
+  height: 33px;
+  border-radius: 12px 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding: 0px 5px;
+  margin-top: 15px;
 }
 
 .lookbookCard{
  margin-top: 30px;
- margin-left: 550px;
+ margin-left: 230px;
 }
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 
 .dlt{
   margin-bottom: 1px;
@@ -419,4 +427,8 @@ body.sidebar-mini .sidebar {
 
 .edt{
   background-color: #CF898D;
+}
+
+.galleryCard{
+  margin-left: 230px;
 }
