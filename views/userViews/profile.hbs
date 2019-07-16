@@ -1,11 +1,17 @@
+<body>
 <nav>
 
 <div class="sidebar">
     <div class="sidebar-content">
       <div class="navicon"><a class="menu-icon" href="#"><i id="menuicon" class="fa fa-times "></i></a></div>
+          <div class="spinnerIcon"><i class="fas fa-spinner fa-spin"></i></div>
+        <div class="daysTill">
+          <h4>Days Until Your Event:</h4>
+           <h3>{{daysTill}} Days</h3>
+        </div>
       <ul class="sidebar-menu list-unstyled">
         <li class="list-item"><a href="#"><i class="fa fa-home"></i><span>Home</span></a></li>
-        <li class="list-item"><a href="#"><i class="fas fa-book-open"></i><span>LookBook</span></a></li>
+        <li class="list-item"><a href="/look/lookbook"><i class="fas fa-book-open"></i><span>LookBook</span></a></li>
         <li class="list-item"><a href="#"><i class="fas fa-tasks"></i><span>Check-List</span></a></li>
         <li class="list-item"><a href="/auth/logout"><i class="fas fa-sign-out-alt"></i><span>Log Out</span></a></li>
       </ul>
@@ -21,7 +27,7 @@
 <section class="pageContent">
   <h1>Welcome {{currentUser.username}}</h1>
 </section>
-
+</body>
 
  <script
   src="https://code.jquery.com/jquery-3.4.1.js"

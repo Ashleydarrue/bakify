@@ -14,6 +14,7 @@ const bcrypt = require("bcryptjs");
 const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
 const flash = require("connect-flash");
+mongoose.set('useFindAndModify', false);
 
 mongoose
   .connect('mongodb://localhost/bakify', {useNewUrlParser: true})
@@ -107,6 +108,9 @@ app.use('/', index);
 
 const auth = require('./routes/userRoutes');
 app.use('/auth', auth);
+
+const look = require('./routes/lookbookRoutes');
+app.use('/look' , look)
 
 
 module.exports = app;

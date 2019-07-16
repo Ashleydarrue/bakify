@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa&display=swap");
 body {
   margin: 0 auto;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  font: 14px;
+  font-family: 'Comfortaa', cursive; }
 
 nav {
   height: 75px;
@@ -247,16 +249,25 @@ img.logo {
   to {
     transform: scale(1); } }
 
-.howitworks {
-  margin-top: 70px; }
-
 .sidebar {
   background: rgba(119, 182, 190, 0.7);
-  width: 275px;
+  width: 200px;
   position: fixed;
   height: 100%;
   z-index: 10000;
   transition: all 0.5s; }
+  .sidebar .spinnerIcon {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #888;
+    padding: 10px 0;
+    color: palevioletred; }
+  .sidebar .daysTill {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: 1px solid #888;
+    padding: 0 0; }
   .sidebar .navicon {
     text-align: right;
     padding: 10px 15px;
@@ -284,7 +295,7 @@ img.logo {
     list-style: none; }
 
 body.sidebar-mini .sidebar {
-  width: 50px; }
+  width: 90px; }
   body.sidebar-mini .sidebar .sidebar-menu li a {
     text-align: center; }
     body.sidebar-mini .sidebar .sidebar-menu li a span {
@@ -292,5 +303,52 @@ body.sidebar-mini .sidebar {
 
 .pageContent {
   margin-left: 320px; }
+
+.howitworks {
+  margin-top: 70px; }
+
+.howitworks h2 {
+  display: flex;
+  justify-content: center;
+  color: black; }
+
+.howitworks p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 34px 209px;
+  font-size: 20px;
+  color: black; }
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: white; }
+
+.lookbookContent {
+  margin-left: 200px;
+  padding-top: 1px;
+  height: 45px;
+  background-color: rgba(119, 182, 190, 0.7); }
+
+.lookbookContent p {
+  margin-left: 15px;
+  color: white; }
+
+.addimg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px dotted pink;
+  margin-left: 215px;
+  padding: 5px 5px;
+  width: 25%; }
+
+.upload {
+  width: 70px;
+  height: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
 /*# sourceMappingURL=style.css.map */
