@@ -10,7 +10,6 @@ const ensureLogin = require("connect-ensure-login");
  router.get('/lookbook', ensureLogin.ensureLoggedIn(),(req, res, next)=>{
   User.findById(req.user._id).populate('lookbook')
   .then(user => {
-    console.log(user.lookbook.images[0].imgPath);
     res.render('userViews/lookbook', {image: user.lookbook.images, layout:false})
   })
   .catch(err => {

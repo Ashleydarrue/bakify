@@ -35,13 +35,28 @@
         </form>
      </section>
 
-     <section class"userLookbook">
-       {{#each image }}
-
-        <img src="{{this.imagePath}}"/>
-        <p>{{this.comment}}</p>
-       {{/each}}
+     <section class="lookbookCard">
+              {{#each image}}
+                  <div class="row">
+                  <div class="col s12 m6">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src={{imgPath}}>
+                        {{!-- <span class="card-title">Card Title</span> --}}
+                      </div>
+                      <div class="card-content">
+                        <p>{{this.comment}}.</p>
+                      </div>
+                      <div class="card-action">
+                        <button class="dlt">DELETE</button>
+                        <button class="edt">Edit Comment</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+             {{/each}}
      </section>
+    
 
 
 
@@ -56,3 +71,9 @@
   <script src="/javascripts/script.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <link rel="stylesheet" href="/stylesheets/style.css" />
+  <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            

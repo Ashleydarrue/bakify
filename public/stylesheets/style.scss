@@ -383,7 +383,7 @@ body.sidebar-mini .sidebar {
   margin-left: 200px;
  padding-top: 1px;
   height:  45px;
-  background-color: rgba(119, 182, 190, 0.7);
+  background-color: #CF898D;
 }
 .lookbookContent p{
   margin-left: 15px;
@@ -406,4 +406,17 @@ body.sidebar-mini .sidebar {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.lookbookCard{
+ margin-top: 30px;
+ margin-left: 550px;
+}
+
+.dlt{
+  margin-bottom: 1px;
+}
+
+.edt{
+  background-color: #CF898D;
 }
