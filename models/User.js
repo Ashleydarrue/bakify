@@ -7,6 +7,7 @@ const userSchema = new Schema ({
     password: {type: String, required: true},
     eventDate:{type: Date},
     lookbook: {type: Schema.Types.ObjectId, ref: 'Lookbook'}
+   
 })
 
 

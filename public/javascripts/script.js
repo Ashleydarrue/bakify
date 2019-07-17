@@ -13,6 +13,10 @@ window.onclick = function(event) {
   }
 }
 
+//modal
+$(document).ready(function(){
+  $('.modal').modal();
+});
 
 //sidebar
 $(document).ready(function() {
@@ -55,3 +59,5 @@ $(document).ready(function() {
     }
   }
 });
+
+

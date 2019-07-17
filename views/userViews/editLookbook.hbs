@@ -2,11 +2,10 @@
     <div class="sidebar-content">
       <div class="navicon"><a class="menu-icon" href="#"><i class="fas fa-book-open"></i></a></div>
          <div class="title">
-          <h6> Your LookBook</h6>
+          <h6> Edit Comment:</h6>
          </div>
       <ul class="sidebar-menu list-unstyled">
         <li class="list-item"><a href="/auth/profile"><i class="fa fa-home"></i><span>Home</span></a></li>
-        <li class="list-item"><a href="/look/lookbook"><i class="fas fa-book-open"></i><span>LookBook</span></a></li>
         <li class="list-item"><a href="/look/gallery"><i class="far fa-images"></i><span>Gallery</span></a></li>
         <li class="list-item"><a href="#"><i class="fas fa-tasks"></i><span>Check-List</span></a></li>
         <li class="list-item"><a href="/auth/logout"><i class="fas fa-sign-out-alt"></i><span>Log Out</span></a></li>
@@ -20,30 +19,30 @@
   </div>
 
 
-<section class="galleryCard">
+
+             
+   <section class="editCard">
+                        <form action="/look/lookbook/update/{{idthing}}/{{index}}" method="POST">
                   <div class="row">
-              {{#each galleries}}
                   <div class="col s12 m6">
                     <div class="card">
                       <div class="card-image">
-                        <img src={{this.Image}}>
+                        <img src={{image.imgPath}}>
                         {{!-- <span class="card-title">Card Title</span> --}}
                       </div>
                       <div class="card-content">
-                        {{!-- <p>{{this.comment}}.</p> --}}
+                       <label>Comment:</label>
+                        <input name="comment" type="text" value="{{image.comment}}">
                       </div>
                       <div class="card-action">
-                        <button class="add">ADD TO LOOKBOOK</button>
+                          <button> Save Changes</button>
                       </div>
                     </div>
                   </div>
-             {{/each}}
                 </div>
-
-                
-
-
-
+                        </form>
+ </section>
+          
 
 
 
@@ -57,28 +56,15 @@
 
 
 
+<script
+src="https://code.jquery.com/jquery-3.4.1.js"
+integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+crossorigin="anonymous"></script>
+<script src="/javascripts/script.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link rel="stylesheet" href="/stylesheets/style.css" />
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-
-
-
-
-
-
-
-
-
-
-
-                <script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
-  <script src="/javascripts/script.js"></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  <link rel="stylesheet" href="/stylesheets/style.css" />
-  <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

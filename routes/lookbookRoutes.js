@@ -38,14 +38,10 @@ router.post('/addimage', uploadMagic.single('thePic') ,(req, res, next)=>{
 })
 
 router.post('/lookbook/delete/:idOfImgPath/:indextodelete', (req, res, next)=>{
-
-  console.log(req.params.idOfImgPath, req.params.indextodelete )
-
   Lookbook.findById(req.params.idOfImgPath)
   .then((lookbook)=>{
 
     lookbook.images.splice(req.params.indextodelete, 1)
-     console.log(lookbook);
 
     lookbook.save().then(()=>{
         res.redirect('/look/lookbook')
@@ -57,13 +53,37 @@ router.post('/lookbook/delete/:idOfImgPath/:indextodelete', (req, res, next)=>{
 
 })
 
+router.get("/lookbook/edit/:idOfImgPath/:indextoedit", (req,res,next)=>{
+  let onePath = req.params.idOfImgPath
+  let twoPath = req.params.indextoedit
+  Lookbook.findById(req.params.idOfImgPath)
+  .then((lookbook)=>{
+    let thething = lookbook.images[twoPath]
+  res.render('userViews/editLookbook', {layout:false, image: thething, index: twoPath , idthing: onePath})
+})
+  .catch((err)=>{
+      next(err);
+  })
+})
 
 
+router.post('/lookbook/update/:idOfImgPath/:indextoedit',(req,res,next)=>{
+  let theID = req.params.idOfImgPath;
+  let index = req.params.indextoedit
+  console.log(theID, index)
+  Lookbook.findById(theID)
+  .then((lookbook) => {
 
+    lookbook.images[index].comment = req.body.comment
+    lookbook.save().then(()=>{
+      res.redirect('/look/lookbook')
+  })
+ })
+ .catch((err)=>{
+    next(err);
+ })
 
-
-
-
+})
 
 
 router.get("/gallery", (req,res,next)=>{

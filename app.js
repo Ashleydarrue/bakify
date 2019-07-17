@@ -122,5 +122,7 @@ app.use('/auth', auth);
 const look = require('./routes/lookbookRoutes');
 app.use('/look' , look)
 
+const all = require('./routes/allLookbooksRoutes');
+app.use('/all', all);
 
 module.exports = app;
