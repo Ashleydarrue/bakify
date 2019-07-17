@@ -39,7 +39,17 @@
      <section class="emptynav"><p>White Text</p></section>
 
      <section class="lookbookCard">
-                  <div class="row">
+              {{#unless image}}
+                <h2 class="instructions">Welcome To Your LookBook</h2>
+                <p class="instructions2">The purpose of your lookbook is for our designers to establish an idea of what your dream cake looks like.
+                 By using images and comments you can describe to us what your vision is. You can add as many images as you'd like to your lookbook.</p>
+                <p class="instructions2">If you don't yet have an idea of what you want your cake to resemble, feel free to look at our gallery of cakes we've already made in the past, these images are in the "Gallery" section.
+                You can also look at images other customers have posted to their lookbook, these images can be found in the "All LookBooks" section.</p>
+                <p class="instructions">To Get started Simply Click the "Upload" button.</p>
+                <h5 class="instructions"> Let's Get Baking!</h5>
+              {{/unless}}
+
+            <div class="row">
               {{#each image}}
                   <div class="col s12 m6">
                     <div class="card">
