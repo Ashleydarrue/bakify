@@ -1,16 +1,16 @@
-// const mongoose = require('mongoose');
-// const Gallery = require('../models/Gallery')
+const mongoose = require('mongoose');
+const Gallery = require('../models/Gallery')
 
-// mongoose
-//   .connect('mongodb://localhost/bakify', {
-//     useMongoClient: true
-//   })
-//   .then(() => {
-//     console.log('Connected to Mongo!')
+mongoose
+  .connect(process.env.MONGOLAB_NAVY_URI, {
+    useMongoClient: true
+  })
+  .then(() => {
+    console.log('Connected to Mongo!')
 
-//   }).catch(err => {
-//     console.error('Error connecting to mongo', err)
-//   });
+  }).catch(err => {
+    console.error('Error connecting to mongo', err)
+  });
 
 const galleryArray = [{
     Image: "/images/caraselcake.png"
@@ -107,12 +107,12 @@ const galleryArray = [{
   }
 ];
 
-module.exports = galleryArray;
 
-// Gallery.create(galleryArray)
-//   .then(() => {
-//     console.log('it worked')
-//   })
-//   .catch(() => {
-//     console.log('it didnt work')
-//   });
+Gallery.create(galleryArray)
+.then(() => {
+  console.log('it worked')
+})
+.catch(() => {
+  console.log('it didnt work')
+});
+module.exports = galleryArray;
