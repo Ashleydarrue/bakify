@@ -6,7 +6,7 @@ const lookbookSchema = new Schema ({
   images: [{
     imgPath: {type: String}, 
     comment: {type: String},
-    owner: {type: String}
+    owner: {type: String} 
   }],
   // description: String
    

@@ -19,7 +19,7 @@ mongoose.set('useFindAndModify', false);
 // const Gallery = require('./models/Gallery')
 
 mongoose
-  .connect('mongodb://localhost/bakify', {useNewUrlParser: true})
+  .connect(process.env.MONGOLAB_NAVY_URI, {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
 
