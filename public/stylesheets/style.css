@@ -250,7 +250,7 @@ img.logo {
     transform: scale(1); } }
 
 .sidebar {
-  background: rgba(119, 182, 190, 0.7);
+  background: rgba(5, 185, 208, 0.67);
   width: 200px;
   position: fixed;
   height: 100%;
@@ -265,15 +265,19 @@ img.logo {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 0 0; }
+    padding: 0 0;
+    color: white; }
+  .sidebar .daysTill h4 {
+    margin-bottom: 3px; }
   .sidebar .navicon {
     text-align: right;
     padding: 10px 15px;
     color: #ffffff; }
     .sidebar .navicon a {
       color: #ffffff;
-      font-size: 22px;
-      display: inline-block; }
+      font-size: 15px;
+      display: inline-block;
+      text-align: left; }
   .sidebar .sidebar-menu li a {
     display: block;
     padding: 10px;
@@ -290,7 +294,8 @@ img.logo {
   .sidebar #menuicon {
     transition: all 0.7s; }
   .sidebar ul {
-    list-style: none; }
+    list-style: none;
+    padding-inline-start: 30px; }
 
 body.sidebar-mini .sidebar {
   width: 90px; }
@@ -354,6 +359,9 @@ body.sidebar-mini .sidebar {
 
 .lookbookCard {
   margin-top: 30px;
+  margin-left: 230px; }
+
+.allCards {
   margin-left: 230px; }
 
 .row {
