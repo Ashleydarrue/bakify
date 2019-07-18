@@ -13,24 +13,25 @@ router.post('/signup', (req, res, next)=>{
   const thePassword = req.body.password;
   const theUsername = req.body.username;
   const theDate = req.body.eventDate;
-
-  
-  
-
   const salt = bcrypt.genSaltSync(12);
   const hashedPassWord =  bcrypt.hashSync(thePassword, salt);
-    Lookbook.create({}).then((lookbook)=>{ 
+
+    Lookbook.create({})
+    .then((lookbook)=>{ 
       User.create({
         username: theUsername,
         password: hashedPassWord,
         eventDate: theDate,
         lookbook: lookbook,
       })
-      .then(()=>{
-        console.log('yay');
-        res.redirect('/')
+      .then((user)=>{
+        req.login(user, function(err){
+          if (err) {return next(err);}
+          return res.redirect('/auth/profile/' );
+        })
       })
       .catch((err)=>{
+        console.log("error is here")
         next(err);
       })
     })
@@ -56,5 +57,9 @@ router.post("/login", passport.authenticate("local", {
 router.get('/logout', (req, res, next)=>{
   req.logout();
   res.redirect("/");
+})
+
+router.get('/checklist', (req, res, next) =>{
+  res.render('userViews/checkList', {layout: false});
 })
 module.exports = router;

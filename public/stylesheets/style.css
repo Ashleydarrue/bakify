@@ -654,7 +654,15 @@ body {
     font-size: 15px;
     color: black; }
   .howitworks h2 {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .checkSection .task1 p:first-child {
+    text-align: center;
+    margin-left: 76px;
+    margin: -47px 316px 0px 310px;
+    background-color: #CF898D;
+    color: white;
+    border-radius: 50%;
+    padding: 14px; } }
 
 @media only screen and (max-width: 400px) {
   nav {
@@ -695,7 +703,9 @@ body {
     font-size: 15px;
     color: black; }
   .howitworks h2 {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .checkSection .task1 p:first-child {
+    display: none; } }
 
 @media only screen and (max-width: 500px) {
   nav {
@@ -754,7 +764,9 @@ body {
   .cancelbtn, .signupbtn {
     float: left;
     width: 50%;
-    padding: 14px 10px; } }
+    padding: 14px 10px; }
+  .checkSection .task1 p:first-child {
+    display: none; } }
 
 @media only screen and (max-width: 600px) {
   .topheader h2 {
@@ -768,6 +780,24 @@ body {
     font-family: 'Dancing Script', cursive;
     color: black;
     margin-top: -150px; } }
+
+@media only screen and (max-width: 700px) {
+  .nav-links {
+    margin-right: 0px;
+    margin-top: 6px; }
+  .nav-links a {
+    font-size: 12px; }
+  nav img {
+    display: none; }
+  .howitworks p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 8px 30px;
+    font-size: 15px;
+    color: black; }
+  .howitworks h2 {
+    font-size: 30px; } }
 
 @media only screen and (max-width: 1000px) {
   .topheader h2 {
@@ -784,7 +814,9 @@ body {
   .container h1 {
     font-size: 20px; }
   .container p {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .checkSection .task1 p:first-child {
+    display: none; } }
 
 @media only screen and (max-width: 1300px) {
   .topheader h2 {
@@ -804,5 +836,28 @@ body {
     font-size: 12px; }
   .velas {
     left: 66%; } }
+
+.checkSection img {
+  width: 200px; }
+
+.checkSection {
+  margin-left: 300px;
+  text-align: center;
+  margin-bottom: 20px; }
+  .checkSection h2 {
+    font-size: 50px; }
+  .checkSection p {
+    font-size: 12px; }
+  .checkSection hr {
+    width: 75%;
+    margin-top: 120px; }
+  .checkSection .task1 p:first-child {
+    text-align: center;
+    margin-left: 84px;
+    margin: -47px 566px 0px 523px;
+    background-color: #CF898D;
+    color: white;
+    border-radius: 50%;
+    padding: 14px; }
 
 /*# sourceMappingURL=style.css.map */

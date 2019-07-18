@@ -13,6 +13,10 @@ window.onclick = function(event) {
   }
 }
 
+//date validation 
+
+
+
 //modal
 $(document).ready(function(){
   $('.modal').modal();
