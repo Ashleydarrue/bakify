@@ -910,7 +910,9 @@ body {
   .aboutApp {
     display: none;
   }
-  
+  .footer img{
+   display: none;
+  }
 }
 
 
@@ -982,6 +984,9 @@ body {
   .aboutApp{
     display: none;
   }
+  .footer img{
+    display: none;
+   }
 
 }
 @media only screen and (max-width: 500px){
@@ -1075,6 +1080,9 @@ body {
   .aboutApp {
     display: none;
   }
+  .footer img{
+    display: none;
+   }
 }
 
 @media only screen and (max-width: 600px){
@@ -1097,6 +1105,9 @@ body {
     margin: 8px 30px;
     font-size: 15px;
   }
+  .footer img{
+    display: none;
+   }
 }
 @media only screen and (max-width: 700px){
     .nav-links {
@@ -1113,19 +1124,21 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin: 8px 30px;
     font-size: 15px;
     color: black;
   }
   .howitworks h2{
     font-size:30px;
   }
-  .flex-container {
-    display:none;
+  .flex-container > span {
+    font-size: 17px;
   }
   .aboutApp {
     display: none;
   }
+  .footer img{
+    display: none;
+   }
 }
 
 
@@ -1153,8 +1166,8 @@ body {
       display: none;
     }
   }
-  .flex-container {
-    display:none;
+  .flex-container > span {
+    font-size: 17px;
 
   }
   .aboutApp p{
@@ -1185,12 +1198,25 @@ body {
  .velas{
    left: 66%;
  }
- .flex-container {
-  display:none;
+//  .flex-container {
+//   display:none;
+//  }
   
-}
-.aboutApp p{
-  margin: 8px 30px;
+  .howitworks p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+ }
+.aboutApp p {
+  margin: 8px 120px;
   font-size: 15px;
+  margin-bottom: 50px;
 }
+ .footer img {
+   height: 320px;
+  width: 80%;
+  margin-left: 30px;
+  }
 }
