@@ -370,7 +370,8 @@ body.sidebar-mini .sidebar {
 
 .row {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  padding: 0px 136px; }
 
 .dlt {
   margin-bottom: 1px; }
