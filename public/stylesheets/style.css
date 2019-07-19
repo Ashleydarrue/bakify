@@ -314,7 +314,7 @@ body.sidebar-mini .sidebar {
 .howitworks {
   margin-top: 70px; }
 
-.howitworks h2 {
+.howitworks h4 {
   display: flex;
   justify-content: center;
   color: black; }
@@ -323,8 +323,8 @@ body.sidebar-mini .sidebar {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin: 34px 209px;
-  font-size: 20px;
+  margin: 50px 260px;
+  font-size: 18px;
   color: black; }
 
 .title {
@@ -615,6 +615,74 @@ body {
   font-size: 15px;
   padding: 5px 110px; }
 
+.checkSection img {
+  width: 200px; }
+
+.checkSection {
+  margin-left: 300px;
+  text-align: center;
+  margin-bottom: 20px; }
+  .checkSection h2 {
+    font-size: 50px; }
+  .checkSection p {
+    font-size: 12px; }
+  .checkSection hr {
+    width: 75%;
+    margin-top: 120px; }
+  .checkSection .task1 p:first-child {
+    text-align: center;
+    margin-left: 84px;
+    margin: -47px 566px 0px 523px;
+    background-color: #CF898D;
+    color: white;
+    border-radius: 50%;
+    padding: 14px; }
+
+.aboutApp h4 {
+  display: flex;
+  justify-content: center; }
+
+.aboutApp p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 50px 260px;
+  font-size: 18px;
+  color: black; }
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px; }
+
+.flex-container > span {
+  text-transform: uppercase;
+  color: black;
+  background-color: #212428;
+  width: 25%;
+  height: 200px;
+  text-align: center;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 12px 0px;
+  border: 2px solid white;
+  background-image: url("/images/AdobeStock_204565948.jpeg"); }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px; }
+
+.footer img {
+  height: 300px;
+  width: 50%;
+  margin-left: 30px; }
+
 @media only screen and (max-width: 300px) {
   nav {
     height: 80px;
@@ -662,7 +730,11 @@ body {
     background-color: #CF898D;
     color: white;
     border-radius: 50%;
-    padding: 14px; } }
+    padding: 14px; }
+  .flex-container {
+    display: none; }
+  .aboutApp {
+    display: none; } }
 
 @media only screen and (max-width: 400px) {
   nav {
@@ -705,6 +777,10 @@ body {
   .howitworks h2 {
     font-size: 30px; }
   .checkSection .task1 p:first-child {
+    display: none; }
+  .flex-container {
+    display: none; }
+  .aboutApp {
     display: none; } }
 
 @media only screen and (max-width: 500px) {
@@ -766,6 +842,10 @@ body {
     width: 50%;
     padding: 14px 10px; }
   .checkSection .task1 p:first-child {
+    display: none; }
+  .flex-container {
+    display: none; }
+  .aboutApp {
     display: none; } }
 
 @media only screen and (max-width: 600px) {
@@ -779,7 +859,12 @@ body {
     padding: 19px;
     font-family: 'Dancing Script', cursive;
     color: black;
-    margin-top: -150px; } }
+    margin-top: -150px; }
+  .flex-container {
+    display: none; }
+  .aboutApp p {
+    margin: 8px 30px;
+    font-size: 15px; } }
 
 @media only screen and (max-width: 700px) {
   .nav-links {
@@ -797,7 +882,11 @@ body {
     font-size: 15px;
     color: black; }
   .howitworks h2 {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .flex-container {
+    display: none; }
+  .aboutApp {
+    display: none; } }
 
 @media only screen and (max-width: 1000px) {
   .topheader h2 {
@@ -816,7 +905,12 @@ body {
   .container p {
     font-size: 12px; }
   .checkSection .task1 p:first-child {
-    display: none; } }
+    display: none; }
+  .flex-container {
+    display: none; }
+  .aboutApp p {
+    margin: 8px 30px;
+    font-size: 15px; } }
 
 @media only screen and (max-width: 1300px) {
   .topheader h2 {
@@ -835,29 +929,11 @@ body {
   .container p {
     font-size: 12px; }
   .velas {
-    left: 66%; } }
-
-.checkSection img {
-  width: 200px; }
-
-.checkSection {
-  margin-left: 300px;
-  text-align: center;
-  margin-bottom: 20px; }
-  .checkSection h2 {
-    font-size: 50px; }
-  .checkSection p {
-    font-size: 12px; }
-  .checkSection hr {
-    width: 75%;
-    margin-top: 120px; }
-  .checkSection .task1 p:first-child {
-    text-align: center;
-    margin-left: 84px;
-    margin: -47px 566px 0px 523px;
-    background-color: #CF898D;
-    color: white;
-    border-radius: 50%;
-    padding: 14px; }
+    left: 66%; }
+  .flex-container {
+    display: none; }
+  .aboutApp p {
+    margin: 8px 30px;
+    font-size: 15px; } }
 
 /*# sourceMappingURL=style.css.map */
