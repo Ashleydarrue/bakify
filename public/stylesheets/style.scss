@@ -36,7 +36,12 @@ nav img{
    height: 45px;
    margin-left: 10px;
 }
-   
+  
+
+.centerThisCard{
+  margin-left: 410px !important;
+}
+
 .topheader{
   background-image: url('../images/header.jpeg');
   background-size: cover;
@@ -363,24 +368,15 @@ body.sidebar-mini .sidebar {
 }
 
 
-.howitworks{
+.howitworksContainer{
   margin-top: 70px;
+  display: flex;
+  flex-direction: row;
+  .howitworksimg{
+    width:25%;
+  }
 }
 
-.howitworks h4{
-  display: flex;
-  justify-content: center;
-  color: black;
-}
-
-.howitworks p {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin: 50px 260px;
-  font-size: 18px;
-  color: black;
-}
 
 .title{
   display: flex;
@@ -1202,13 +1198,11 @@ body {
 //   display:none;
 //  }
   
-  .howitworks p {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 18px;
-    color: black;
- }
+//   .howitworksimg{
+//     display: flex;
+//     justify-content: center;
+   
+//  }
 .aboutApp p {
   margin: 8px 120px;
   font-size: 15px;
