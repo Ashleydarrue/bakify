@@ -10,7 +10,7 @@ const Gallery = require("../models/Gallery");
  router.get('/lookbook', ensureLogin.ensureLoggedIn(),(req, res, next)=>{
   User.findById(req.user._id).populate('lookbook')
   .then(user => {
-    res.render('userViews/lookbook', {image: user.lookbook.images, layout:false, theid: user.lookbook._id})
+    res.render('userViews/lookbook', {image: user.lookbook.images, theid: user.lookbook._id})
   })
   .catch(err => {
     console.log(err)
@@ -59,7 +59,8 @@ router.get("/lookbook/edit/:idOfImgPath/:indextoedit", (req,res,next)=>{
   Lookbook.findById(req.params.idOfImgPath)
   .then((lookbook)=>{
     let thething = lookbook.images[twoPath]
-  res.render('userViews/editLookbook', {layout:false, image: thething, index: twoPath , idthing: onePath})
+    res.render('userViews/editLookbook', {image: thething, index: twoPath , idthing: onePath})
+  // res.render('userViews/editLookbook', {layout:false, image: thething, index: twoPath , idthing: onePath})
 })
   .catch((err)=>{
       next(err);
@@ -89,7 +90,7 @@ router.post('/lookbook/update/:idOfImgPath/:indextoedit',(req,res,next)=>{
 router.get("/gallery", (req,res,next)=>{
     Gallery.find()
       .then(galleries => {
-        res.render('userViews/gallery', {galleries, layout:false});
+        res.render('userViews/gallery', {galleries});
       })
   })
 

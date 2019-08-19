@@ -9,7 +9,11 @@ nav {
   height: 75px;
   display: flex;
   justify-content: space-between;
-  font-size: 16px; }
+  font-size: 16px;
+  position: fixed;
+  z-index: 1;
+  background-color: white !important;
+  top: 0; }
 
 .landingPage {
   display: flex;
@@ -256,64 +260,6 @@ img.logo {
   to {
     transform: scale(1); } }
 
-.sidebar {
-  background: rgba(5, 185, 208, 0.67);
-  width: 200px;
-  position: fixed;
-  height: 100%;
-  z-index: 10000;
-  transition: all 0.5s; }
-  .sidebar .spinnerIcon {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-    color: palevioletred; }
-  .sidebar .daysTill {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 0 0;
-    color: white; }
-  .sidebar .daysTill h4 {
-    margin-bottom: 3px; }
-  .sidebar .navicon {
-    text-align: right;
-    padding: 10px 15px;
-    color: #ffffff; }
-    .sidebar .navicon a {
-      color: #ffffff;
-      font-size: 15px;
-      display: inline-block;
-      text-align: left; }
-  .sidebar .sidebar-menu li a {
-    display: block;
-    padding: 10px;
-    background: transparent;
-    color: #ffffff;
-    font-size: 16px;
-    transition: all 0.3s linear; }
-    .sidebar .sidebar-menu li a:hover {
-      background: #03c4e8;
-      text-decoration: none; }
-    .sidebar .sidebar-menu li a i {
-      margin-right: 10px;
-      font-size: 15px; }
-  .sidebar #menuicon {
-    transition: all 0.7s; }
-  .sidebar ul {
-    list-style: none;
-    padding-inline-start: 30px; }
-
-body.sidebar-mini .sidebar {
-  width: 90px; }
-  body.sidebar-mini .sidebar .sidebar-menu li a {
-    text-align: center; }
-    body.sidebar-mini .sidebar .sidebar-menu li a span {
-      display: none; }
-
-.pageContent {
-  margin-left: 320px; }
-
 .howitworksContainer {
   margin-top: 70px;
   display: flex;
@@ -355,12 +301,9 @@ body.sidebar-mini .sidebar {
   padding: 0px 5px;
   margin-top: 15px; }
 
-.lookbookCard {
-  margin-top: 30px;
-  margin-left: 230px; }
-
 .allCards {
-  margin-left: 230px; }
+  margin-left: 230px;
+  margin-top: 75px; }
 
 .row {
   display: flex;
@@ -372,9 +315,6 @@ body.sidebar-mini .sidebar {
 
 .edt {
   background-color: #CF898D; }
-
-.galleryCard {
-  margin-left: 230px; }
 
 .editCard {
   display: flex;
@@ -395,10 +335,14 @@ body.sidebar-mini .sidebar {
 .allBooks {
   font-size: 12px; }
 
-.addimageModal a {
+.addimageModal {
+  width: 150px;
   display: flex;
   justify-content: center;
-  height: 45px; }
+  margin-left: 670px; }
+
+.addimageModal a {
+  color: white !important; }
 
 body {
   width: 100%;
@@ -415,8 +359,8 @@ body {
   background: #ffffff;
   border-radius: 10px;
   position: absolute;
-  top: 312px;
-  left: 61%;
+  top: 405px;
+  left: 50%;
   margin-left: -2.4px;
   margin-top: -8.33333333px;
   width: 5px;
@@ -942,5 +886,15 @@ body {
     height: 320px;
     width: 80%;
     margin-left: 30px; } }
+
+.userLinks {
+  margin-top: 100px; }
+
+.userLinks ul {
+  display: flex;
+  justify-content: center; }
+
+.userLinks li {
+  margin-left: 50px; }
 
 /*# sourceMappingURL=style.css.map */

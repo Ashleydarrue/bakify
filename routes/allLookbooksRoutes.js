@@ -32,7 +32,7 @@ router.get('/allLookBooks',ensureLogin.ensureLoggedIn() ,(req, res, next) => {
        })
         data = {
          lookbooks: tempArray,
-         layout: false
+        //  layout: false
         }
       res.render('userViews/allLookbooks', data)
     }).catch(err => next(err));

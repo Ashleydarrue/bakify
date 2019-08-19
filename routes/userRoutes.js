@@ -44,7 +44,7 @@ router.get("/profile", ensureLogin.ensureLoggedIn(), (req, res) => {
   const diffTime = Math.abs(date1 - date2);
   const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
  
-  res.render("userViews/profile", { layout: false, user: req.user, daysTill: diffDays });
+  res.render("userViews/profile", {user: req.user, daysTill: diffDays });
 });
 
 router.post("/login", passport.authenticate("local", {
@@ -60,6 +60,6 @@ router.get('/logout', (req, res, next)=>{
 })
 
 router.get('/checklist', (req, res, next) =>{
-  res.render('userViews/checkList', {layout: false});
+  res.render('userViews/checkList', );
 })
 module.exports = router;

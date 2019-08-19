@@ -13,6 +13,11 @@ nav{
   display: flex;
   justify-content: space-between;
   font-size: 16px;
+  position: fixed;
+  z-index:1;
+  // overflow:  hidden !important;
+  background-color: white !important;
+  top: 0;
 }
 
 .landingPage {
@@ -287,86 +292,12 @@ img.logo {
 
 
 
-//sidebar
-.sidebar {
-  background:rgba(5, 185, 208, 0.67);
-  width: 200px;
-  position: fixed;
-  height: 100%;
-  z-index: 10000;
-  transition: all 0.5s;
-  
-  .spinnerIcon{
-    display: flex;
-    justify-content: center;
-   
-    padding: 10px 0;
-    color: palevioletred;
-  }
-  .daysTill{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 0 0;
-    color: white;
-  }
-  
-  .daysTill h4{
-    margin-bottom: 3px;
-  }
-  .navicon {
-    text-align: right;
-    padding: 10px 15px;
-    color: #ffffff;
-
-    a {
-      color: #ffffff;
-      font-size: 15px;
-      display: inline-block;
-      text-align: left;
-    }
-  }
-  .sidebar-menu li a {
-    display: block;
-    padding: 10px;
-    background: transparent;
-    color: #ffffff;
-    font-size: 16px;
-    transition: all 0.3s linear;
-
-    &:hover {
-      background: #03c4e8;
-      text-decoration: none;
-    }
-    i {
-      margin-right: 10px;
-      font-size: 15px;
-    }
-  }
-  #menuicon {
-    transition: all 0.7s;
-  }
-  ul{
-    list-style: none;
-    padding-inline-start: 30px;
-  }
-}
-
-body.sidebar-mini .sidebar {
-  width: 90px;
-  .sidebar-menu li a {
-    text-align: center;
-    span {
-      display: none;
-    }
-  }
-}
 
 
-//page content 
-.pageContent{
-  margin-left: 320px;
-}
+
+
+
+
 
 
 .howitworksContainer{
@@ -417,16 +348,9 @@ body.sidebar-mini .sidebar {
   margin-top: 15px;
 }
 
-.lookbookCard {
- margin-top: 30px;
- margin-left: 230px;
- 
-}
 .allCards{
   margin-left: 230px;
-   
-
-
+  margin-top: 75px;
  }
 
 .row{
@@ -445,10 +369,7 @@ body.sidebar-mini .sidebar {
   background-color: #CF898D;
 }
 
-.galleryCard{
-  margin-left: 230px;
 
-}
 
 .editCard {
   display: flex;
@@ -474,11 +395,15 @@ body.sidebar-mini .sidebar {
    font-size: 12px;
 }
 
-.addimageModal a{
+.addimageModal{
+  width: 150px;
   display: flex;
   justify-content: center;
-  height: 45px;
-  
+  margin-left: 670px;
+}
+
+.addimageModal a{
+  color: white !important;
 }
 
 //animation
@@ -505,8 +430,8 @@ body {
   background: #ffffff;
   border-radius: 10px;
   position: absolute;
-  top: 312px;
-  left: 61%;
+  top: 405px;
+  left: 50%;
   margin-left: -2.4px;
   margin-top: -8.33333333px;
   width: 5px;
@@ -1214,4 +1139,17 @@ body {
   width: 80%;
   margin-left: 30px;
   }
+}
+
+
+.userLinks{
+  margin-top: 100px;
+}
+.userLinks ul{
+  display: flex;
+  justify-content: center;
+}
+
+.userLinks li{
+  margin-left: 50px;
 }
