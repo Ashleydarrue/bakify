@@ -351,7 +351,7 @@ body {
 #cake {
   display: block;
   position: relative;
-  margin: -10em auto 0 auto; }
+  margin: -20em auto 0 auto; }
 
 /* ============================================== Candle
 */
@@ -359,7 +359,7 @@ body {
   background: #ffffff;
   border-radius: 10px;
   position: absolute;
-  top: 405px;
+  top: 260px;
   left: 50%;
   margin-left: -2.4px;
   margin-top: -8.33333333px;
@@ -558,7 +558,6 @@ body {
   width: 200px; }
 
 .checkSection {
-  margin-left: 300px;
   text-align: center;
   margin-bottom: 20px; }
   .checkSection h2 {
@@ -571,7 +570,7 @@ body {
   .checkSection .task1 p:first-child {
     text-align: center;
     margin-left: 84px;
-    margin: -47px 566px 0px 523px;
+    margin: -47px 712px 0px 683px;
     background-color: #CF898D;
     color: white;
     border-radius: 50%;
