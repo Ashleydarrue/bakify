@@ -896,4 +896,18 @@ body {
 .userLinks li {
   margin-left: 50px !important; }
 
+.howItWorks {
+  text-align: center;
+  margin-bottom: 50px; }
+
+.howItWorksImg {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 300px;
+  margin-bottom: 50px; }
+
+.howItWorksImg img {
+  width: 75%; }
+
 /*# sourceMappingURL=style.css.map */
