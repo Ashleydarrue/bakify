@@ -755,8 +755,39 @@ body {
    margin-left: 30px;
  }
 
+ 
+ 
+ .userLinks{
+   margin-top: 100px !important;
+  }
+  .userLinks ul{
+    display: flex !important;
+    justify-content: center !important;
+  }
+  
+  .userLinks li{
+    margin-left: 50px !important;
+  }
+  
+  .howItWorks{
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .howItWorksImg{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 300px;
+    margin-bottom: 50px;
+  }
+  
+  .howItWorksImg img{
+    width: 75%;
+  }
+  
   //mobile page
-@media only screen and (max-width: 300px){
+ @media only screen and (max-width: 300px){
   nav{
     height: 80px;
     display: flex;
@@ -799,7 +830,7 @@ body {
     font-family: 'Dancing Script', cursive;
     color: black;
     margin-top: -150px;
-}
+ }
     
   .howitworks p {
     display: flex;
@@ -834,10 +865,18 @@ body {
   .footer img{
    display: none;
   }
-}
-
-
-@media only screen and (max-width: 400px){
+ 
+  .howItWorksImg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 90px;
+    margin-bottom: 50px;
+ }
+ }
+ 
+ 
+ @media only screen and (max-width: 400px){
   nav{
     height: 80px;
     display: flex;
@@ -880,7 +919,7 @@ body {
     font-family: 'Dancing Script', cursive;
     color: black;
     margin-top: -150px;
-}
+ }
     
   .howitworks p {
     display: flex;
@@ -901,16 +940,24 @@ body {
   .flex-container {
     display: none;
   }
-
+ 
   .aboutApp{
     display: none;
   }
   .footer img{
     display: none;
    }
-
-}
-@media only screen and (max-width: 500px){
+ 
+   .howItWorksImg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 90px;
+    margin-bottom: 50px;
+ }
+ 
+ }
+ @media only screen and (max-width: 500px){
   nav{
     height: 80px;
     display: flex;
@@ -1004,9 +1051,17 @@ body {
   .footer img{
     display: none;
    }
-}
-
-@media only screen and (max-width: 600px){
+ 
+   .howItWorksImg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 90px;
+    margin-bottom: 50px;
+ }
+ }
+ 
+ @media only screen and (max-width: 600px){
   .topheader h2{
     font-size: 21px;
     background-color: rgba(119, 182, 190, 0.7);
@@ -1018,7 +1073,7 @@ body {
     font-family: 'Dancing Script', cursive;
     color: black;
     margin-top: -150px;
-}
+ }
   .flex-container {
     display:none;
   }
@@ -1029,8 +1084,16 @@ body {
   .footer img{
     display: none;
    }
-}
-@media only screen and (max-width: 700px){
+   .howItWorksImg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 90px;
+    margin-bottom: 50px;
+ }
+ }
+ 
+ @media only screen and (max-width: 700px){
     .nav-links {
       margin-right: 0px;
       margin-top: 6px;
@@ -1060,10 +1123,18 @@ body {
   .footer img{
     display: none;
    }
-}
-
-
-@media only screen and (max-width: 1000px){
+ 
+   .howItWorksImg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 90px;
+    margin-bottom: 50px;
+ }
+ }
+ 
+ 
+ @media only screen and (max-width: 1000px){
   .topheader h2 {
     font-size: 20px;
     background-color: rgba(119, 182, 190, 0.7);
@@ -1089,15 +1160,23 @@ body {
   }
   .flex-container > span {
     font-size: 17px;
-
+ 
   }
   .aboutApp p{
     margin: 8px 30px;
     font-size: 15px;
   }
-}
-
-@media only screen and (max-width: 1300px){
+ 
+  .howItWorksImg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 90px;
+    margin-bottom: 50px;
+ }
+ }
+ 
+ @media only screen and (max-width: 1300px){
   .topheader h2 {
     font-size: 20px;
     background-color: rgba(119, 182, 190, 0.7);
@@ -1119,53 +1198,23 @@ body {
  .velas{
    left: 66%;
  }
-//  .flex-container {
-//   display:none;
-//  }
-  
-//   .howitworksimg{
-//     display: flex;
-//     justify-content: center;
-   
-//  }
-.aboutApp p {
+ 
+ .aboutApp p {
   margin: 8px 120px;
   font-size: 15px;
   margin-bottom: 50px;
-}
+ }
  .footer img {
    height: 320px;
   width: 80%;
   margin-left: 30px;
   }
-}
-
-
-.userLinks{
-  margin-top: 100px !important;
-}
-.userLinks ul{
-  display: flex !important;
-  justify-content: center !important;
-}
-
-.userLinks li{
-  margin-left: 50px !important;
-}
-
-.howItWorks{
- text-align: center;
- margin-bottom: 50px;
-}
-
-.howItWorksImg{
- display: flex;
- justify-content: center;
- flex-direction: column;
- margin-left: 300px;
- margin-bottom: 50px;
-}
-
-.howItWorksImg img{
- width: 75%;
-}
+  
+  .howItWorksImg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 90px;
+    margin-bottom: 50px;
+ }
+ }

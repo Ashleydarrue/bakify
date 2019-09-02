@@ -620,6 +620,30 @@ body {
   width: 50%;
   margin-left: 30px; }
 
+.userLinks {
+  margin-top: 100px !important; }
+
+.userLinks ul {
+  display: flex !important;
+  justify-content: center !important; }
+
+.userLinks li {
+  margin-left: 50px !important; }
+
+.howItWorks {
+  text-align: center;
+  margin-bottom: 50px; }
+
+.howItWorksImg {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 300px;
+  margin-bottom: 50px; }
+
+.howItWorksImg img {
+  width: 75%; }
+
 @media only screen and (max-width: 300px) {
   nav {
     height: 80px;
@@ -673,7 +697,13 @@ body {
   .aboutApp {
     display: none; }
   .footer img {
-    display: none; } }
+    display: none; }
+  .howItWorksImg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 90px;
+    margin-bottom: 50px; } }
 
 @media only screen and (max-width: 400px) {
   nav {
@@ -722,7 +752,13 @@ body {
   .aboutApp {
     display: none; }
   .footer img {
-    display: none; } }
+    display: none; }
+  .howItWorksImg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 90px;
+    margin-bottom: 50px; } }
 
 @media only screen and (max-width: 500px) {
   nav {
@@ -789,7 +825,13 @@ body {
   .aboutApp {
     display: none; }
   .footer img {
-    display: none; } }
+    display: none; }
+  .howItWorksImg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 90px;
+    margin-bottom: 50px; } }
 
 @media only screen and (max-width: 600px) {
   .topheader h2 {
@@ -809,7 +851,13 @@ body {
     margin: 8px 30px;
     font-size: 15px; }
   .footer img {
-    display: none; } }
+    display: none; }
+  .howItWorksImg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 90px;
+    margin-bottom: 50px; } }
 
 @media only screen and (max-width: 700px) {
   .nav-links {
@@ -832,7 +880,13 @@ body {
   .aboutApp {
     display: none; }
   .footer img {
-    display: none; } }
+    display: none; }
+  .howItWorksImg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 90px;
+    margin-bottom: 50px; } }
 
 @media only screen and (max-width: 1000px) {
   .topheader h2 {
@@ -856,7 +910,13 @@ body {
     font-size: 17px; }
   .aboutApp p {
     margin: 8px 30px;
-    font-size: 15px; } }
+    font-size: 15px; }
+  .howItWorksImg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 90px;
+    margin-bottom: 50px; } }
 
 @media only screen and (max-width: 1300px) {
   .topheader h2 {
@@ -883,30 +943,12 @@ body {
   .footer img {
     height: 320px;
     width: 80%;
-    margin-left: 30px; } }
-
-.userLinks {
-  margin-top: 100px !important; }
-
-.userLinks ul {
-  display: flex !important;
-  justify-content: center !important; }
-
-.userLinks li {
-  margin-left: 50px !important; }
-
-.howItWorks {
-  text-align: center;
-  margin-bottom: 50px; }
-
-.howItWorksImg {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-left: 300px;
-  margin-bottom: 50px; }
-
-.howItWorksImg img {
-  width: 75%; }
+    margin-left: 30px; }
+  .howItWorksImg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 90px;
+    margin-bottom: 50px; } }
 
 /*# sourceMappingURL=style.css.map */
