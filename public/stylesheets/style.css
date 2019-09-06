@@ -34,9 +34,6 @@ nav img {
   height: 45px;
   margin-left: 10px; }
 
-.centerThisCard {
-  margin-left: 410px !important; }
-
 .topheader {
   background-image: url("../images/header.jpeg");
   background-size: cover;
@@ -318,7 +315,6 @@ img.logo {
 .editCard {
   display: flex;
   justify-content: center;
-  padding-right: 315px;
   padding-top: 30px; }
 
 .modal-content {
